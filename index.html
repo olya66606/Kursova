@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap-5.3.3-dist/bootstrap-5.3.3-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrap-5.3.3-dist/css/style/css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ponomar&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kelly+Slab&display=swap" rel="stylesheet">
+
+   
+    <title> cafe</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg sticky-top fixed-top">
+        <div class="container-fluid header">
+            <a class="navbar-brand" href="#">
+                <img class="logo" src="img/logotip.png" alt="Логотип">
+            </a>
+            
+           
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" 
+                    aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+        
+            <div class="collapse navbar-collapse" id="navbarContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link hachi-maru-pop-regular" href="#maen">Главная</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link hachi-maru-pop-regular" href="#con">Меню</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link hachi-maru-pop-regular" href="#baristablock">Команда</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle hachi-maru-pop-regular" href="#" role="button" 
+                           data-bs-toggle="dropdown" aria-expanded="false">
+                            Дополнительные действия
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item hachi-maru-pop-regular" href="#footer">Написать нам</a></li>
+                            <li><a class="dropdown-item hachi-maru-pop-regular" href="#footer">Оставить отзыв</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                
+                <div class="d-flex profile-icon">
+                    <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#authModal">
+                        <div class="profile-icon-wrapper">
+                            <i class="bi bi-person-square" style="font-size: 2.1rem;"></i>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+      
+      <div class="modal fade" id="authModal" tabindex="-1" aria-labelledby="authModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title hachi-maru-pop-regular" id="authModalLabel">Вход в аккаунт</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <form id="loginForm">
+                <div class="mb-3">
+                  <label for="loginEmail" class="form-label hachi-maru-pop-regular">Почта</label>
+                  <input type="email" class="form-control" id="loginEmail" required>
+                </div>
+                <div class="mb-3">
+                  <label for="loginPassword" class="form-label hachi-maru-pop-regular">Пароль</label>
+                  <input type="password" class="form-control" id="loginPassword" required>
+                </div>
+                <button type="submit" class="btn voiti w-100 hachi-maru-pop-regular">Войти</button>
+              </form>
+              
+              <div class="text-center mt-3">
+                <p class="hachi-maru-pop-regular">Нет аккаунта? <a href="#" id="showRegister">Зарегистрироваться</a></p>
+              </div>
+              
+              <form id="registerForm" style="display: none;">
+                <div class="mb-3">
+                  <label for="regName" class="form-label hachi-maru-pop-regular">Имя</label>
+                  <input type="text" class="form-control" id="regName" required>
+                </div>
+                <div class="mb-3">
+                  <label for="regEmail" class="form-label hachi-maru-pop-regular">Email</label>
+                  <input type="email" class="form-control" id="regEmail" required>
+                </div>
+                <div class="mb-3">
+                  <label for="regPassword" class="form-label hachi-maru-pop-regular">Пароль</label>
+                  <input type="password" class="form-control" id="regPassword" required>
+                </div>
+                <button type="submit" class="btn btn-success w-100 hachi-maru-pop-regular">Зарегистрироваться</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <main id="maen">
+        <div class="right">
+            <div class="right-top">
+            <h1 class="nazvanie" >ДОБРО ПОЖАЛОВАТЬ <br> В УГОЛОК ХОГВАРТСА</h1>
+            <p class="afera">Выиграй и получи cкидку на наш фирменный кофе</p></div>
+            <img class="harry" src="img/harry-Photoroom.png" alt="Гарри - кофейный мастер">
+            <div id="coffee-steam1">
+                <div class="steam1" id="steam5"></div>
+                <div class="steam1" id="steam6"></div>
+                <div class="steam1" id="steam7"></div>
+                <div class="steam1" id="steam8"></div>
+            </div>
+        </div>
+        <div class="left">
+            <div id="container">
+                <div id="coffee-steam">
+                    <div class="steam" id="steam1"></div>
+                    <div class="steam" id="steam2"></div>
+                    <div class="steam" id="steam3"></div>
+                    <div class="steam" id="steam4"></div>
+                </div>
+                <div id="cup-container">
+                    <div id="cup">
+                        <div id="coffee-level"></div>
+                        <div id="cup-handle"></div>
+                        <div id="timer-cup"></div>
+                    </div>
+                    <div id="saucer"></div>
+                </div>
+        
+                <h1 class="igra">Сыграй со мной</h1>
+                <button class="button start" onclick="startGame()">Начать игру</button>
+                <div id="game">
+                    <div id="question-container"></div>
+                </div>
+                <div id="loss">
+                    <h2>Вы проиграли</h2>
+                    <button class="button zanovo" onclick="startGame()">Начать заново</button>
+                </div>
+                <div id="win">
+                    <h1>Поздравляем, вы можете продолжить</h1>
+                    <button class="button vigrish" id="show-discount">Получить приз</button>
+                </div>
+            </div>  
+        </div>
+    </main>
+    
+    <!-- КУПОН -->
+    <div class="discount-modal" id="discountModal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Поздравляем с победой!</h2>
+            <p>Вы выиграли специальную скидку на наш фирменный кофе!</p>
+            <div class="discount-code">COFFEEWIN20</div>
+            <p>Используйте этот код при оформлении заказа, чтобы получить скидку 20%</p>
+            <button class="button" id="close-modal-btn">Закрыть</button>
+        </div>
+    </div>
+
+    <div class="con" id="con">
+        <h1 class="menu-title">Наше Приворотное Меню</h1>
+        <div class="menu-container">
+            <div class="menu">
+                <div class="box">
+                    <span style="--i:1;"><img src="img/lati.png" alt="Latte" data-name="Латте" data-price="300" data-desc="Нежный кофейный напиток с молоком и воздушной пенкой" class="menu-item"></span>
+                    <span style="--i:2;"><img src="img/latimatcha.png" alt="Latte Matcha" data-name="Латте матча" data-price="200" data-desc="Традиционный японский чай матча с молоком" class="menu-item"></span>
+                    <span style="--i:3;"><img src="img/coldcofe.png" alt="Cold Coffee" data-name="Холодная любовь" data-price="400" data-desc="Освежающий холодный кофе со льдом и сиропом" class="menu-item"></span>
+                    <span style="--i:4;"><img src="img/limonad.png" alt="Lemonade" data-name="Лимонад" data-price="356" data-desc="Домашний лимонад с мятой и лимоном" class="menu-item"></span>
+                    <span style="--i:5;"><img src="img/zeleni.png" alt="Green Tea" data-name="Чай надежды" data-price="300" data-desc="Ароматный зеленый чай с жасмином" class="menu-item"></span>
+                    <span style="--i:6;"><img src="img/travinoi.png" alt="Herbal Tea" data-name="Чай любви" data-price="320" data-desc="Травяной чай с ромашкой и мятой" class="menu-item"></span>
+                    <span style="--i:7;"><img src="img/espreso.png" alt="Espresso" data-name="Эспрессо" data-price="160" data-desc="Крепкий черный кофе с насыщенным вкусом" class="menu-item"></span>
+                </div>
+            </div>   
+            
+            <div id="selected-item" class="selected-item show">
+                <div class="selected-content">
+                    <img id="selected-image" src="img/lati.png" alt="Latte" class="selected-img">
+                    <div class="reflection"></div>
+                    <h2 id="item-name" class="item-name">Латте</h2>
+                    <p id="item-price" class="item-price">Цена: 300₽</p>
+                    <p id="item-desc" class="item-desc">Нежный кофейный напиток с молоком и воздушной пенкой</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+ <h1 class="menu-title1" style="text-align: center; font-size: 50px ; ">Наша Команда Бравых Барист</h1>
+<div class="baristablock" id="baristablock">
+        <div class="barista-card-container">
+            <div class="barista-card">
+                <div class="image-container">
+                    <img src="img/baristagirl.png" alt="Фото баристы">
+                </div>
+                <div class="info-container">
+                    <h3 class="hachi-maru-pop-regular">Аманда</h3>
+                    <p>Опытный бариста с более чем пяти летним стажем работы в кофейнях. 
+                        Она увлечена искусством заваривания кофе и постоянно экспериментирует с новыми рецептами и методами приготовления.
+                         В свободное время Аманда изучает различные сорта кофе и развивает свои навыки в латте-арт. </p>
+                </div>
+            </div>
+        </div>
+        <div class="barista-card-container">
+            <div class="barista-card">
+                <div class="image-container">
+                    <img src="img/barista4.png" alt="Фото баристы">
+                </div>
+                <div class="info-container">
+                    <h3 class="hachi-maru-pop-regular">Иван</h3>
+                    <p> Опытный бариста с более чем трёхлетним стажем работы в кофейнях.
+                        В свободное время он посещает мастер-классы, где обучается новым методам приготовления и сервировки кофе.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="barista-card-container">
+            <div class="barista-card">
+                <div class="image-container">
+                    <img src="img/barista5.png" alt="Фото баристы">
+                </div>
+                <div class="info-container">
+                    <h3 class="hachi-maru-pop-regular">Эрика</h3>
+                    <p>Талантливая бариста с более чем 5-летним стажем работы в кафе и кофейнях. 
+                        Она увлечена высоким искусством приготовления кофе, особенно методами ручной заварки и альтернативными способами приготовления, такими как Chemex и V60</p>
+                </div>
+            </div>
+        </div>
+</div>
+
+<div class="otziv">    
+    <section class="reviews-section"> 
+    <h2 class="text-center  ot">Отзывы Наших Клиентов</h2>
+        <div class="container">
+            <div class="reviews-container">
+                <div class="reviews-slider-wrapper">
+                    <button class="slider-arrow prev">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <button class="slider-arrow next">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                    
+                    <div class="reviews-slider" id="reviewsSlider">
+                        <!-- Отзыв 1 -->
+                        <div class="review-card">
+                            <div class="review-card-inner">
+                                <div class="review-card-front">
+                                    <button class="btn  details-btn">Подробнее</button>
+                                </div>
+                                <div class="review-card-back">
+                                    <h3 class="review-name">Анна</h3>
+                                    <div class="review-text">
+                                        Отличный сервис! Быстро, качественно и с душой. Очень рекомендую всем, кто ценит хорошее обслуживание и внимание к деталям.
+                                    </div>
+                                    <div class="review-footer">
+                                        <div class="coffee-likes">
+                                            <i class="fas fa-coffee coffee-icon active"></i>
+                                            <span class="likes-count">☕ 7</span>
+                                        </div>
+                                        <div class="review-date">15.05.2023</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Отзыв 2 -->
+                        <div class="review-card">
+                            <div class="review-card-inner">
+                                <div class="review-card-front">
+                                    <button class="btn  details-btn">Подробнее</button>
+                                </div>
+                                <div class="review-card-back">
+                                    <h3 class="review-name">Иван</h3>
+                                    <div class="review-text">
+                                        Все понравилось, но было небольшое ожидание. Персонал вежливый, атмосфера приятная. Вернусь еще раз обязательно!
+                                    </div>
+                                    <div class="review-footer">
+                                        <div class="coffee-likes">
+                                            <i class="fas fa-coffee coffee-icon"></i>
+                                            <span class="likes-count">☕ 1</span>
+                                        </div>
+                                        <div class="review-date">22.06.2023</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Отзыв 3 -->
+                        <div class="review-card">
+                            <div class="review-card-inner">
+                                <div class="review-card-front">
+                                    <button class="btn  details-btn">Подробнее</button>
+                                </div>
+                                <div class="review-card-back">
+                                    <h3 class="review-name">Елена</h3>
+                                    <div class="review-text">
+                                        Лучшее место в городе! Всегда приятная атмосфера, вкусные напитки и дружелюбный персонал. Часто здесь бываю и всегда довольна.
+                                    </div>
+                                    <div class="review-footer">
+                                        <div class="coffee-likes">
+                                            <i class="fas fa-coffee coffee-icon active"></i>
+                                            <span class="likes-count">☕ 9</span>
+                                        </div>
+                                        <div class="review-date">03.07.2023</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Здесь будут добавляться новые отзывы -->
+                    </div>
+                </div>
+            </div>
+            
+            <div class="add-review-btn">
+                <button class="btn otz" style="background-color: rgb(177, 88, 25);" data-bs-toggle="modal" data-bs-target="#addReviewModal">
+                    <i class="fas fa-plu me-2"></i>Добавить отзыв
+                </button>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Модальное окно для добавления отзыва -->
+    <div class="modal fade" id="addReviewModal" tabindex="-1" aria-labelledby="addReviewModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="addReviewModalLabel">Добавить отзыв</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="reviewForm">
+                        <div class="mb-3">
+                            <label for="reviewerName" class="form-label">Ваше имя</label>
+                            <input type="text" class="form-control" id="reviewerName" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="reviewText" class="form-label">Ваш отзыв</label>
+                            <textarea class="form-control" id="reviewText" rows="5" required></textarea>
+                        </div>
+                        <div class="mb-3">
+                            <label for="reviewDate" class="form-label">Дата</label>
+                            <input type="text" class="form-control" id="reviewDate" readonly>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+                    <button type="button" class="btn btn-primary" id="submitReview">Отправить</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+ <footer id="footer">
+  <div class="footer-content">
+      <div class="footer-logo">
+          <img src="img/logotip.png" class="logo" alt="Coffee Shop Logo">
+          <p>Уголок Хогвартса (2025)</p>
+      </div>
+
+      <div class="footer-contact">
+          <h3>Связаться с нами</h3>
+          <p>Адрес: 123 Кофе Лайн, Калининград</p>
+          <p>Телефон: (555) 123-4567</p>
+          <p>Почта: info@coffeeshop.com</p>
+      </div>
+
+      <div class="footer-social">
+          <h3>Мы в социальных сетях</h3>
+          <a href="#" class="social-icon"><i class="bi bi-telegram"></i></a>
+          <a href="#" class="social-icon"><img class="social-icon"  src="img/odnoklassniki_icon.png" alt=""></a>
+          <a href="#" class="social-icon"><img  class="social-icon" src="img/vk_black_logo_icon_147058.png" alt=""></a>
+      </div>
+
+      <div class="footer-hours">
+          <h3>Часы работы</h3>
+          <p>Понедельник- Пятница: 7:00 AM - 8:00 PM</p>
+          <p>Суббота: 8:00 AM - 9:00 PM</p>
+          <p>Воскресенье: 9:00 AM - 7:00 PM</p>
+      </div>
+  </div>
+
+  <div class="footer-bottom">
+      <p> 2025 Уголок Хогвартса. Все права защещины.</p>
+  </div>
+
+  <div class="coffee-beans">
+      <div class="bean"></div>
+      <div class="bean"></div>
+      <div class="bean"></div>
+      <div class="bean"></div>
+      <div class="bean"></div>
+  </div>
+</footer>
+
+
+
+
+</body>
+</html>
+
+<script src="vue.global.js"></script>
+<script src="bootstrap-5.3.3-dist/bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
+<script src="app.js"></script>
