@@ -1,5 +1,5 @@
 /*Навбар*/
-
+//Скрытие и появление навигационной панели 
 function setupNavbarScrollBehavior() {
     let lastScroll = 0;
     const navbar = document.querySelector('.navbar');
@@ -28,46 +28,6 @@ function setupNavbarScrollBehavior() {
     });
   }
   
-  
-  function setupActiveLinks() {
-    const navLinks = document.querySelectorAll('.nav-link:not(.dropdown-toggle)');
-    const dropdownItems = document.querySelectorAll('.dropdown-item');
-    
-   
-    navLinks.forEach(link => {
-      link.addEventListener('click', function() {
-        navLinks.forEach(l => l.classList.remove('active'));
-        this.classList.add('active');
-      });
-    });
-    
-    
-    dropdownItems.forEach(item => {
-      item.addEventListener('click', function() {
-        dropdownItems.forEach(i => i.classList.remove('active'));
-        this.classList.add('active');
-      });
-    });
-    
-
-    window.addEventListener('scroll', () => {
-      const fromTop = window.scrollY + navbar.offsetHeight + 20;
-      
-      navLinks.forEach(link => {
-        const section = document.querySelector(link.getAttribute('href'));
-        
-        if (
-          section.offsetTop <= fromTop &&
-          section.offsetTop + section.offsetHeight > fromTop
-        ) {
-          link.classList.add('active');
-        } else {
-          link.classList.remove('active');
-        }
-      });
-    });
-  }
-
   document.addEventListener('DOMContentLoaded', function() {
     setupNavbarScrollBehavior();
     setupActiveLinks();
