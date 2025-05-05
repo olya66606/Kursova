@@ -1,4 +1,5 @@
 /*Навбар*/
+
 //Скрытие и появление навигационной панели 
 function setupNavbarScrollBehavior() {
     let lastScroll = 0;
@@ -30,60 +31,7 @@ function setupNavbarScrollBehavior() {
   
   document.addEventListener('DOMContentLoaded', function() {
     setupNavbarScrollBehavior();
-    setupActiveLinks();
-   
-    const currentPath = window.location.hash;
-    if (currentPath) {
-      const activeLink = document.querySelector(`.nav-link[href="${currentPath}"]`);
-      if (activeLink) {
-        activeLink.classList.add('active');
-      }
-    }
   });
-
-const navbarStyles = `
-  .navbar-hide {
-    transform: translateY(-100%);
-    transition: transform 0.3s ease-in-out;
-  }
-  
-  .navbar {
-    transition: transform 0.3s ease-in-out;
-  }
-  
-  .nav-link.active,
-  .dropdown-item.active {
-    font-weight: 600;
-    position: relative;
-  }
-  
-  .nav-link.active:not(.dropdown-toggle)::after,
-  .dropdown-item.active::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 50%;
-    height: 2px;
-
-  }
-  
-  .dropdown-item.active::after {
-    bottom: auto;
-    top: 0;
-    left: 0;
-    transform: none;
-    width: 3px;
-    height: 100%;
-  }
-`;
-
-
-const styleElement = document.createElement('style');
-styleElement.innerHTML = navbarStyles;
-document.head.appendChild(styleElement);  
-
 
 
 /*____________________________________________Крутилка меню_________________________________________________*/
