@@ -4,11 +4,11 @@
 function setupNavbarScrollBehavior() {
     let lastScroll = 0;
     const navbar = document.querySelector('.navbar');
-    const navbarHeight = navbar.offsetHeight;
+    const navbarHeight = navbar.offsetHeight;  
     const scrollThreshold = 100; 
   
     window.addEventListener('scroll', () => {
-      const currentScroll = window.pageYOffset;
+      const currentScroll = window.pageYOffset; 
       
      
       if (currentScroll <= navbarHeight) {

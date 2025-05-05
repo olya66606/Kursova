@@ -1162,7 +1162,7 @@ body{
   scroll-behavior: smooth;
   margin: 0px 151px auto;
 }
-.likes-count{
+.likes-count,.fas {
   font-size: 30px;
   font-family: "Ponomar", system-ui;
 }
