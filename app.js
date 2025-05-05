@@ -304,10 +304,11 @@ document.addEventListener('DOMContentLoaded', function() {
         
         const coffeeIcon = document.createElement('i');
         coffeeIcon.className = 'fas fa-coffee coffee-icon';
+        coffeeIcon.textContent = '☕';
         
         const likesCount = document.createElement('span');
         likesCount.className = 'likes-count';
-        likesCount.textContent = '☕ 4';
+        likesCount.textContent = ' 4';
         
         const dateElement = document.createElement('div');
         dateElement.className = 'review-date';
